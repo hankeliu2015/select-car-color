@@ -15,15 +15,20 @@ $(document).ready(function(){
         currentCarsLink = carsLinkByColor[currentColor];
         console.log(currentColor, currentCarsLink);
     })
+
+    $("#redirectColorLink").click(function(e) {
+        e.preventDefault(); 
+        window.location.href=`${currentCarsLink}`;
+    })
 })
 
-function buttonOnClickRedirect() {
-    let redirectButton = document.getElementById("redirectColorLink")
-    redirectButton.onclick = function redirect(e) {
-        e.preventDefault;
-        window.location.href=`${currentCarsLink}`;
-    }
-}
+// function buttonOnClickRedirect() {
+//     let redirectButton = document.getElementById("redirectColorLink")
+//     redirectButton.onclick = function redirect(e) {
+//         e.preventDefault;
+//         window.location.href=`${currentCarsLink}`;
+//     }
+// }
 
 function buttonNoRedirect() {
     console.log("back to home page")
