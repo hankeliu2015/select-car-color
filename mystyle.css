@@ -1,0 +1,60 @@
+body {
+  text-align: center;
+  border: solid 4px black;
+}
+
+.App-header {
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+.buttonContainer > button {
+  border-radius: 15px;
+  height: 2rem;
+  width: 6rem;
+  color: white;
+  border: 4px;
+  margin: 0.25rem;
+}
+
+.blackButton {
+  color: white;
+  background-color: black;
+  border: solid black 4px;
+}
+
+.blackButton:hover {
+  color: black;
+  background-color: white;
+  border: solid black 4px;
+}
+
+.redButton {
+  color: white;
+  background-color: red;
+  border: solid red 4px;
+}
+
+.redButton:hover {
+  color: red;
+  background-color: white;
+  border: solid red 4px;
+}
+
+.blueButton {
+  color: white;
+  background-color: blue;
+  border: solid blue 4px;
+}
+
+.blueButton:hover {
+  color: blue;
+  background-color: white;
+  border: solid blue 4px;
+}
