@@ -6,13 +6,17 @@ const carsLinkByColor = {
 }
 
 let currentCarsLink = carsLinkByColor.black; 
-let redirectButton = document.getElementById("redirectTest")
-console.log("link:",currentCarsLink)
-console.log("button: ", redirectButton);
 
-function buttonOnClickRedirect(e) {
-    e.preventDefault(); 
-    window.location.href=`${currentCarsLink}`;
+function buttonOnClickRedirect() {
+    let redirectButton = document.getElementById("redirectColorLink")
+    redirectButton.onclick = function redirect(e) {
+        e.preventDefault;
+        window.location.href=`${currentCarsLink}`;
+    }
 }
 
-redirectButton.addEventListener("click", buttonOnClickRedirect(e))
+function buttonNoRedirect() {
+    console.log("back to home page")
+    //function close the popup window
+}
+
