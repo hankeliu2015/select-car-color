@@ -5,7 +5,17 @@ const carsLinkByColor = {
     blue: "https://duckduckgo.com/?q=Blue+Car&t=brave&iar=images&iax=images&ia=images"
 }
 
-let currentCarsLink = carsLinkByColor.black; 
+let currentCarsLink = '';
+let currentColor = 'none';
+
+$(document).ready(function(){
+    $(".colorButton").click(function(e) {
+        e.preventDefault();
+        currentColor = e.target.innerText.toLowerCase();
+        currentCarsLink = carsLinkByColor[currentColor];
+        console.log(currentColor, currentCarsLink);
+    })
+})
 
 function buttonOnClickRedirect() {
     let redirectButton = document.getElementById("redirectColorLink")

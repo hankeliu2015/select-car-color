@@ -23,37 +23,37 @@ body {
   margin: 0.25rem;
 }
 
-.blackButton {
+#blackButton {
   color: white;
   background-color: black;
   border: solid black 4px;
 }
 
-.blackButton:hover {
+#blackButton:hover {
   color: black;
   background-color: white;
   border: solid black 4px;
 }
 
-.redButton {
+#redButton {
   color: white;
   background-color: red;
   border: solid red 4px;
 }
 
-.redButton:hover {
+#redButton:hover {
   color: red;
   background-color: white;
   border: solid red 4px;
 }
 
-.blueButton {
+#blueButton {
   color: white;
   background-color: blue;
   border: solid blue 4px;
 }
 
-.blueButton:hover {
+#blueButton:hover {
   color: blue;
   background-color: white;
   border: solid blue 4px;
