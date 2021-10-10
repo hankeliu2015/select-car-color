@@ -13,7 +13,10 @@ $(document).ready(function(){
         e.preventDefault();
         currentColor = e.target.innerText.toLowerCase();
         currentCarsLink = carsLinkByColor[currentColor];
-        $(".containerBackdrop").removeClass("containerHide").addClass("containerShow");
+        $(".containerBackdrop").toggle("display");
+
+        // $(".containerHide").toggle(display);
+
         $("#carColor").text(currentColor).css({"color":`${currentColor}`, "font-weight":"bold"});
         $(".carIconColor").css("fill", `${currentColor}`)
     })
@@ -25,6 +28,7 @@ $(document).ready(function(){
 })
 
 function buttonNoRedirect() {
-    $(".containerBackdrop").removeClass("containerShow").addClass("containerHide");
+    // $(".containerBackdrop").removeClass("containerShow").addClass("containerHide");
+    $(".containerBackdrop").toggle("display");
 }
 

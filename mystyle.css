@@ -64,6 +64,7 @@ body {
 }
 
 .containerBackdrop {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -82,9 +83,9 @@ body {
   background-color: white;
 }
 
-.containerHide {
+/* .containerHide {
   display: none;
-}
+} */
 
 .containerShow {
   display: block;
