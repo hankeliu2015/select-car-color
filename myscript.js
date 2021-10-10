@@ -16,7 +16,7 @@ $(document).ready(function(){
 
         $("#carColor").text(currentColor).css({"color":`${currentColor}`, "font-weight":"bold"});
         $(".carIconColor").css("fill", `${currentColor}`)
-        $(".containerBackdrop").toggle();
+        $(".containerBackdrop").toggle(true);
     })
 
     $("#redirectColorLink").click(function(e) {
@@ -26,6 +26,6 @@ $(document).ready(function(){
 })
 
 function buttonNoRedirect() {
-    $(".containerBackdrop").toggle();
+    $(".containerBackdrop").toggle(false);
 }
 
