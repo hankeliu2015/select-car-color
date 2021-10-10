@@ -15,6 +15,7 @@ $(document).ready(function(){
         currentCarsLink = carsLinkByColor[currentColor];
         $(".containerBackdrop").removeClass("containerHide").addClass("containerShow");
         $("#carColor").text(currentColor).css({"color":`${currentColor}`, "font-weight":"bold"});
+        $(".carIconColor").css("fill", `${currentColor}`)
     })
 
     $("#redirectColorLink").click(function(e) {
