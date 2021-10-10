@@ -13,7 +13,6 @@ $(document).ready(function(){
         e.preventDefault();
         currentColor = e.target.innerText.toLowerCase();
         currentCarsLink = carsLinkByColor[currentColor];
-        console.log(currentColor, currentCarsLink);
         $(".containerBackdrop").removeClass("containerHide").addClass("containerShow");
     })
 
@@ -24,7 +23,6 @@ $(document).ready(function(){
 })
 
 function buttonNoRedirect() {
-    console.log("back to home page")
-    //function close the popup window
+    $(".containerBackdrop").removeClass("containerShow").addClass("containerHide");
 }
 
