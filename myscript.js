@@ -14,6 +14,7 @@ $(document).ready(function(){
         currentColor = e.target.innerText.toLowerCase();
         currentCarsLink = carsLinkByColor[currentColor];
         console.log(currentColor, currentCarsLink);
+        $(".containerBackdrop").removeClass("containerHide").addClass("containerShow");
     })
 
     $("#redirectColorLink").click(function(e) {
@@ -21,14 +22,6 @@ $(document).ready(function(){
         window.location.href=`${currentCarsLink}`;
     })
 })
-
-// function buttonOnClickRedirect() {
-//     let redirectButton = document.getElementById("redirectColorLink")
-//     redirectButton.onclick = function redirect(e) {
-//         e.preventDefault;
-//         window.location.href=`${currentCarsLink}`;
-//     }
-// }
 
 function buttonNoRedirect() {
     console.log("back to home page")
