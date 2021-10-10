@@ -59,13 +59,30 @@ body {
   border: solid blue 4px;
 }
 
+.containerBackdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: grey;
+  z-index: 11;
+}
 .popupContainer {
   width: 50%;
   left: 50%;
-  transform: translate(50%, -25%);
+  transform: translate(50%, 25%);
   border: solid #0abde3 10px;
   border-radius: 2rem;
   margin: 0.5rem;
+}
+
+.containerHide {
+  display: none;
+}
+
+.containerShow {
+  display: block;
 }
 
 .carRedirectButtonsContainer {
