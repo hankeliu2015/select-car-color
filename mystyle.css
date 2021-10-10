@@ -34,6 +34,7 @@ body {
   color: black;
   background-color: white;
   border: solid black 4px;
+  cursor: pointer;
 }
 
 #redButton {
@@ -46,6 +47,7 @@ body {
   color: red;
   background-color: white;
   border: solid red 4px;
+  cursor: pointer;
 }
 
 #blueButton {
@@ -58,6 +60,7 @@ body {
   color: blue;
   background-color: white;
   border: solid blue 4px;
+  cursor: pointer;
 }
 
 .containerBackdrop {
@@ -110,6 +113,7 @@ body {
   width: 7rem;
   border: solid black 2px;
   margin-bottom: 1rem;
+  cursor: pointer;
 }
 
 @media (max-width: 700px) {
