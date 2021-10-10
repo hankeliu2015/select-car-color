@@ -2,6 +2,8 @@
 
 Please view the app demo from here: <https://www.dropbox.com/s/bxxupcf5eapg7r9/HearBeatTestingApp.mov?dl=0>
 
+Another version of the same App made with React is here: <https://github.com/hankeliu2015/select-a-car>
+
 1 Global hover effect:
 invert colors. Border, 4px initial color 2
 2 On click:
